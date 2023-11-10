@@ -57,10 +57,8 @@ func GetPoints(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"points": points})
 }
 
-// Implement CalculatePoints, GenerateReceiptID, and LookupPointsByID functions here
-
 func CalculatePoints(receipt Receipt) int {
-	// Implement the point calculation logic based on the provided rules
+	// Implement the point calculation logic
 	points := 0
 
 	//add points for retailer alphanumeric characters
